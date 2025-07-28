@@ -23,6 +23,11 @@ if(!pathname.includes("dashboard"))
             Posts
           </li>
           </Link>
+          <Link href='/meals'>
+          <li>
+            Meals
+          </li>
+          </Link>
 
           </ul>
         </nav></div>
