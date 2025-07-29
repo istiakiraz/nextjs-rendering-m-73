@@ -36,9 +36,9 @@ export default async function MealsPage({searchParams}) {
        <MealSearchInput></MealSearchInput>
     </div>
 
-      {meals.map((meal)=> <div  key={meal.idMeal}>
+      {meals?.map((meal)=> <div  key={meal?.idMeal}>
         <p>
-          {meal.strMeal}
+          {meal?.strMeal}
         </p>
         <img className='w-63 h-63' src={meal.strMealThumb} alt={meal.strMeal} />
       </div>)}
