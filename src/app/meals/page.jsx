@@ -1,6 +1,7 @@
 
 import React from 'react'
 import MealSearchInput from './components/MealSearchInput';
+import Image from 'next/image';
 
 export default async function MealsPage({searchParams}) {
 
@@ -40,7 +41,8 @@ export default async function MealsPage({searchParams}) {
         <p>
           {meal?.strMeal}
         </p>
-        <img className='w-63 h-63' src={meal.strMealThumb} alt={meal.strMeal} />
+        <Image  src={meal?.strMealThumb || ''} width={641} height={641} alt={meal?.strMeal || "Meal Image"} />
+        
       </div>)}
 
     </div>
